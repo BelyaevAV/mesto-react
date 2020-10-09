@@ -1,0 +1,12 @@
+.elements {
+  max-width: 1200px;
+  width: 68.90625%;
+  margin: auto;
+  padding-top: 47.25px;
+}
+
+@media (max-width: 800px) {
+  .elements {
+    padding-top: 36px;
+  }
+}

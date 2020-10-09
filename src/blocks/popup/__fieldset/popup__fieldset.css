@@ -1,0 +1,12 @@
+.popup__fieldset {
+  border: hidden;
+  padding: 0;
+  text-align: center;
+  margin: 24px 0 0;
+}
+
+@media (max-width: 680px) {
+  .popup__fieldset {
+    margin-top: 16px;
+  }
+}

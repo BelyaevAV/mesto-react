@@ -1,0 +1,4 @@
+.photo-grid__like-button_liked {
+  background: url(../../../../images/heart-icon-active.svg) no-repeat center;
+  background-size: contain;
+}

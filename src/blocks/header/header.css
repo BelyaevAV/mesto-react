@@ -1,0 +1,29 @@
+@import url('./__logo/header__logo.css');
+
+.header {
+  max-width: 1200px;
+  margin: auto;
+  width: 68.75%;
+}
+
+@media (max-width: 800px) {
+  .header{
+    width: 100%;
+  
+  }
+}
+
+.header::after {
+  content: '';
+  display: block;
+  opacity: 0.7;
+  border: 1px solid #545454;
+  margin: 40.6px auto 36.25px;
+}
+
+@media (max-width: 800px) {
+  .header::after {
+    margin-top: 31.6px;
+    margin-bottom: 38.25px;
+  }
+}

@@ -1,0 +1,12 @@
+.profile__nameholder {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+@media (max-width: 800px) {
+  .profile__nameholder {
+    justify-content: center;
+    padding-top: 10.25px;
+  }
+}

@@ -1,0 +1,5 @@
+.photo-grid__likeblock {
+  display: flex;
+  flex-direction: column;
+  padding: 21px 0 24px;
+}

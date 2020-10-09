@@ -1,0 +1,9 @@
+.photo-grid__textblock {
+  background-color: white;
+  color: black;
+  display: flex;
+  min-height: 79px;
+  justify-content: space-between;
+  padding: 0 21px;
+  border-radius: 0 0 10px 10px;
+}

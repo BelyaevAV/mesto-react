@@ -1,0 +1,15 @@
+.photo-grid__like-button {
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  background: url(../../../images/heart-icon.svg) no-repeat center;
+  width: 20px;
+  height: 18px;
+  background-size: contain;
+  padding: 0;
+}
+
+.photo-grid__like-button:hover {
+  opacity: 0.6;
+  transition: all 1s ease-out;
+}
