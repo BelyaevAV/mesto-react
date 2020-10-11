@@ -12,6 +12,7 @@ function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
   const [selectedCard, setIsImagePopupOpen] = React.useState({});
+  const [active] = React.useState(true)
 
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
@@ -51,6 +52,8 @@ function App() {
         name="edit"
         isOpen={isEditProfilePopupOpen}
         onClose={closeAllPopups}
+        buttonText="Сохранить"
+        isActive={active}
         >
           <fieldset className="popup__fieldset">
             <label className="popup__field">
@@ -61,7 +64,6 @@ function App() {
               <input required="" maxLength="200" minLength="2" type="text" className="popup__input" placeholder="Род занятий" id="job" />
               <span id="job-error" className="popup__input-error"></span>
             </label>
-            <button className="popup__save">Сохранить</button>
           </fieldset>
       </PopupWithForm>
       <PopupWithForm
@@ -69,6 +71,7 @@ function App() {
         name="add"
         isOpen={isAddPlacePopupOpen}
         onClose={closeAllPopups}
+        buttonText="Создать"
       >
           <fieldset className="popup__fieldset">
             <label className="popup__field">
@@ -79,7 +82,6 @@ function App() {
               <input required="" type="url" className="popup__input" placeholder="Ссылка на картинку" id="place-img" />
               <span id="place-img-error" className="popup__input-error"></span>
             </label>
-            <button className="popup__save popup__save_inactive" disabled>Создать</button>
           </fieldset>          
       </PopupWithForm>
       <ImagePopup card={selectedCard} onClose={closeAllPopups} />
@@ -87,21 +89,22 @@ function App() {
         title="Вы уверены?"
         name="confirm"
         onClose={closeAllPopups}
+        buttonText="Да"
+        isActive={active}
       >
-          <button className="popup__save">Да</button>
       </PopupWithForm>
       <PopupWithForm
         title="Обновить аватар"
         name="avatar"
         isOpen={isEditAvatarPopupOpen}
         onClose={closeAllPopups}
+        buttonText="Сохранить"
       >
           <fieldset className="popup__fieldset">
             <label className="popup__field">
               <input required="" type="url" className="popup__input" placeholder="Ссылка на аватар" id="avatar" />
               <span id="avatar-error" className="popup__input-error"></span>
             </label>
-            <button className="popup__save popup__save_inactive" disabled>Сохранить</button>
           </fieldset>  
       </PopupWithForm>
     </div>

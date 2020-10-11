@@ -24,7 +24,7 @@ class Api{
       },
     })
       .then(this._handleResponse)
-      .catch(this._handleError);
+      
   }
   
   getUserInfo () {
@@ -35,7 +35,7 @@ class Api{
       },
     })
     .then(this._handleResponse)
-    .catch(this._handleError);
+    
   }
 
   addNewCard(name, link) {
@@ -99,7 +99,7 @@ class Api{
       }),
     })
     .then(this._handleResponse)
-    .catch(this._handleError)
+    
   }
 
   editAvatar(link) {
@@ -114,7 +114,7 @@ class Api{
       }),
     })
     .then(this._handleResponse)
-    .catch(this._handleError)
+    
   }
 }
 

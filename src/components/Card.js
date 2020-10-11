@@ -14,7 +14,7 @@ function Card(props) {
           <p className="photo-grid__text">{props.card.name}</p>
           <div className="photo-grid__likeblock">
             <button className="photo-grid__like-button" type="button"></button>
-            <p className="photo-grid__like-counter">#</p>
+            <p className="photo-grid__like-counter">{props.card.likes.length}</p>
           </div>
         </figcaption>
       </figure>
