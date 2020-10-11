@@ -98,8 +98,7 @@ function App() {
         name="avatar"
         isOpen={isEditAvatarPopupOpen}
         onClose={closeAllPopups}
-        buttonText="Сохранить"
-      >
+        buttonText="Сохранить"      >
           <fieldset className="popup__fieldset">
             <label className="popup__field">
               <input required="" type="url" className="popup__input" placeholder="Ссылка на аватар" id="avatar" />
