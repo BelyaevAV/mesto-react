@@ -8,6 +8,7 @@
 @import url('./__like-button/_liked/photo-grid__like-button_liked.css');
 @import url('./__likeblock/photo-grid__likeblock.css');
 @import url('./__like-counter/photo-grid__like-counter.css');
+@import url('./__delete-button/_hidden/photo-grid__delete-button_hidden.css');
 
 .photo-grid {
   padding: 0;

@@ -38,7 +38,7 @@ class Api{
     
   }
 
-  addNewCard(name, link) {
+  addNewCard(data) {
     return fetch(`${this._url}/cards`, {
       method: "POST",
       headers: {
@@ -46,8 +46,8 @@ class Api{
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name: name,
-        link: link,
+        name: data.name,
+        link: data.link,
       }),
     })
     .then(this._handleResponse);
@@ -110,7 +110,7 @@ class Api{
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        avatar: link,
+        avatar: link.avatar,
       }),
     })
     .then(this._handleResponse)
@@ -118,7 +118,7 @@ class Api{
   }
 }
 
-export default new Api({
+export const api = new Api({
   url:  'https://mesto.nomoreparties.co/v1/cohort-15',
   auth: 'c552b8f3-03b7-4516-b137-6667ad468f9e'
 })

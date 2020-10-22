@@ -7,7 +7,7 @@ function PopupWithForm(props) {
         <button type="button" className="popup__close" onClick={props.onClose} />
         <h2 className="popup__heading">{props.title}</h2>
         {props.children}
-        <button className={`popup__save ${props.isActive ? "" : "popup__save_inactive" }`}>{props.buttonText}</button>
+        <button className="popup__save"> {props.buttonText}</button>
       </form>
     </section>
   );
